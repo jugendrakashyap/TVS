@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+    border-bottom: 1px solid red;
+}
+
+.header_select {
+    float: right;
+    margin: 12px 20px 10px 0;
+    width: 100px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.header_text {
+    float: right;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 15px 40px 10px 0;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-bottom: 7px;
+}
+
+/* ............................navbar style................................. */
+.dropdown-toggle {
+    list-style: none;
+    float: right;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 85vw;
+}
+
+.dropdown-menu {
+    display: inline-block;
+    line-height: 5vh;
+}
+
+.option {
+    padding: 7px 0 7px 20px;
+    list-style-type: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option:hover {
+    color: white;
+    background-color: red;
+}
+
+.options {
+    display: none;
+    float: right;
+    width: 200px;
+    position: absolute;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+@media (max-width: 1400px) {
+    .menu {
+        font-size: 0.9rem;
+    }
+}
+
+.mini-menu {
+    width: 10px;
+    height: 8px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/60/60995.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px 0 0 7px;
+}
+
+.dropdown-menu:hover .options {
+    display: block;
+}
+
+.dropdown-menu:hover .menu {
+    border-bottom: 0.5vh solid red;
+}
+
+.login_btn {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59s6qBOFlkS5LN4Z0U3G71nCWWg3SuHGVMw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cart_btn {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://static.thenounproject.com/png/82429-200.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lavel {
+    width: 70vw;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.stories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 25px 0 25px 0;
+    color: white;
+}
+
+.story {
+    width: 25vw;
+    height: 80vh;
+    padding: 25px 20px;
+}
+
+.story1 {
+    background-image: url(https://www.tvsmotor.com/-/media/Feature/Coprorate-new-images/iqube-electric.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.story2 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Story/Engineering-Goosebumps_D.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.story3 {
+    background-image: url(https://www.tvsmotor.com/-/media/Feature/Our-Stories/05-04-24/Teaser-Thumbnail-786X436-WithoutHashtag.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vehicle_types {
+    padding: 25px 0 25px 0;
+}
+
+.vehicle_list {
+    margin-left: 50px;
+    float: left;
+}
+
+.vehicle_type {
+    display: inline-block;
+    padding: 10px 2vw 10px 2vw;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+.cities {
+    width: 200px;
+    padding: 10px 0 10px 15px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+    color: rgb(112, 112, 112);
+}
+
+.vehicle_names {
+    margin: 25px 5px 25px 50px;
+    width: 35vw;
+    height: 60vh;
+}
+
+.vehicle_logo {
+    margin: 5px;
+    width: 150px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo1 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Vehicles/Logo/TVS-Ntorq.svg?la=en&hash=1824C64D6E1A0E16768714986C882A59);
+}
+
+.logo2 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Vehicles/Scooters/Jupiter-125.webp?la=en&hash=A99AF8E0453113C262C0CE15A39B1CBC);
+}
+
+.logo3 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Vehicles/Logo/TVS-Jupiter.svg?la=en&hash=0638DD6D71DE9DFBBCF19678C06856F6);
+}
+
+.logo4 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Vehicles/Logo/Scooty-zest.svg?la=en&hash=072EA196193B971EA4965961B57262E1);
+}
+
+.vehicle_name {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid red;
+    }
+}
+
+.parameters {
+    color: rgb(107, 107, 107);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.detais {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px 25px 5px;
+    width: 60vw;
+
+    &:hover {
+        box-shadow: 1px 1px 10px 1px rgb(116, 116, 116);
+    }
+}
+
+.photo {
+    height: 60vh;
+    background-image: url(https://www.tvsmotor.com/-/media/Brand-Pages/NTorq/Overview/Webp-images/DenstuNtorqImages/webp-images/mobile-view_-1121x608.jpg?la=en&h=608&w=1121&hash=FC99295ADAEABF95950049A47C7CF9A2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.know_more {
+    border-radius: 0;
+    border: none;
+    border: 1px solid #183883;
+    margin: 0 15px;
+    padding: 10px 20px;
+    color: #183883;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #183883;
+        color: white;
+    }
+}
+
+.more_vehicles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.more_vehicles_btn {
+    padding: 20px 30px;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #183883;
+    border: 1px solid #183883;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: #183883;
+    }
+}
+
+.bg_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 25px 50px;
+    height: 80vh;
+    background-image: url(https://www.tvsmotor.com/assets/img/map-location.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.card {
+    width: 20vw;
+    height: 200px;
+    background-color: rgba(240, 248, 255, 0.363);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Website-Banner-Desktop-303-x-255-Pix-4.webp);
+}
+
+.card2 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/02.webp);
+}
+
+.card3 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Vehicles/EV/iQube_ST_434x261px-20240627-101920.webp);
+}
+
+.card4 {
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/04.webp);
+}
+
+.text {
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    padding: 50px 15vw 50px 15vw;
+}
+
+.winners {
+    height: 90vh;
+    background-image: url(https://imgd.aeplcdn.com/1280x720/n/cw/ec/152783/tvs-right-side-view0.jpeg?isig=0&wm=3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    width: 28vw;
+    height: 60vh;
+    border: 1px solid rgba(158, 158, 158, 0.596);
+}
+
+.about1 {
+    height: 35vh;
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/About-Us/50-Million.webp?la=en&hash=167AFBA598B2BCB3E8B876B6F3AED0CE);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about2 {
+    height: 35vh;
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/About-Us/TVS-BAU---website-banner1_434-x-261.webp?la=en&hash=504C557AD30C4003AFB4F773CE7E7103);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about3 {
+    height: 35vh;
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/About-Us/presencein60countries-2.webp?la=en&hash=501FF173E5502F7C1A617F8CC871153F);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.award1 {
+    height: 35vh;
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Achievements/award-01.webp?la=en&hash=DAE0FE9A2AF21B9D9E10BD122B494CB6);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.award2 {
+    height: 35vh;
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Achievements/IMG_20220704_183318.webp?la=en&hash=8E3616FF1B56F87624E962CD8D0F018C);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.award3 {
+    height: 35vh;
+    background-image: url(https://www.tvsmotor.com/-/media/HomeOptimizedImages/TVS-Home-Page-WebP/Desktop/Achievements/8.webp?la=en&hash=1864D1ADC7D13C59A8085B90D4D501E9);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(tvs-horse.webp) no-repeat #183883;
+}
+
+.tvs_svg {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background: url(https://www.tvsmotor.com/-/media/Feature/FooterRevamp/TVS-Logo_SVG.svg) no-repeat;
+}
+
+.footer_col {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 35px;
+    margin: 15px;
+}
+
+.item {
+    padding-left: 25px;
+}
+
+.contact {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
