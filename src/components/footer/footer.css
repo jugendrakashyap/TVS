@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(tvs-horse.webp) no-repeat #183883;
+}
+
+.tvs_svg {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background: url(https://www.tvsmotor.com/-/media/Feature/FooterRevamp/TVS-Logo_SVG.svg) no-repeat;
+}
+
+.footer_col {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 35px;
+    margin: 15px;
+}
+
+.item {
+    padding-left: 25px;
+}
+
+.contact {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
